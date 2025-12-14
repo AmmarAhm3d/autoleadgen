@@ -15,7 +15,7 @@ Get up and running with AutoLeadGen in **5 minutes**.
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/autoleadgen.git
+git clone https://github.com/AmmarAhm3d/autoleadgen.git
 cd autoleadgen
 
 # Create & activate virtual environment
@@ -241,8 +241,8 @@ leads = scraper.discover_leads(
 ## 🆘 Need Help?
 
 - Check [Troubleshooting Guide](TROUBLESHOOTING.md)
-- Open an [Issue](https://github.com/yourusername/autoleadgen/issues)
-- Start a [Discussion](https://github.com/yourusername/autoleadgen/discussions)
+- Open an [Issue](https://github.com/AmmarAhm3d/autoleadgen/issues)
+- Start a [Discussion](https://github.com/AmmarAhm3d/autoleadgen/discussions)
 
 ---
 

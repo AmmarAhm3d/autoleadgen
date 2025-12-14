@@ -98,7 +98,7 @@ API Keys: Yelp Fusion, Firecrawl
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/autoleadgen.git
+git clone https://github.com/AmmarAhm3d/autoleadgen.git
 cd autoleadgen
 
 # Create virtual environment
@@ -341,8 +341,8 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 ## 🆘 Support
 
 - 📖 [Full Documentation](docs/)
-- 🐛 [Report Issues](https://github.com/yourusername/autoleadgen/issues)
-- 💬 [Discussions](https://github.com/yourusername/autoleadgen/discussions)
+- 🐛 [Report Issues](https://github.com/AmmarAhm3d/autoleadgen/issues)
+- 💬 [Discussions](https://github.com/AmmarAhm3d/autoleadgen/discussions)
 
 ## 🙏 Acknowledgments
 

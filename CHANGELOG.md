@@ -237,9 +237,9 @@ cp .env.example .env
 ## References
 
 ### GitHub Links
-- [Releases](https://github.com/yourusername/autoleadgen/releases)
-- [Issues](https://github.com/yourusername/autoleadgen/issues)
-- [Discussions](https://github.com/yourusername/autoleadgen/discussions)
+- [Releases](https://github.com/AmmarAhm3d/autoleadgen/releases)
+- [Issues](https://github.com/AmmarAhm3d/autoleadgen/issues)
+- [Discussions](https://github.com/AmmarAhm3d/autoleadgen/discussions)
 
 ### Related Projects
 - [CrewAI](https://github.com/joaomdmoura/crewai)

@@ -25,7 +25,7 @@ Complete guide to deploying AutoLeadGen in various environments.
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/autoleadgen.git
+git clone https://github.com/AmmarAhm3d/autoleadgen.git
 cd autoleadgen
 
 # Create virtual environment

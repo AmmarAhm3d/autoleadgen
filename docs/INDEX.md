@@ -202,10 +202,10 @@ autoleadgen/
 
 ### Getting Help
 
-- **Questions**: Start a [Discussion](https://github.com/yourusername/autoleadgen/discussions)
-- **Issues**: Report a [Bug](https://github.com/yourusername/autoleadgen/issues)
-- **Features**: Request a [Feature](https://github.com/yourusername/autoleadgen/issues)
-- **Discussions**: Join the [Community](https://github.com/yourusername/autoleadgen/discussions)
+- **Questions**: Start a [Discussion](https://github.com/AmmarAhm3d/autoleadgen/discussions)
+- **Issues**: Report a [Bug](https://github.com/AmmarAhm3d/autoleadgen/issues)
+- **Features**: Request a [Feature](https://github.com/AmmarAhm3d/autoleadgen/issues)
+- **Discussions**: Join the [Community](https://github.com/AmmarAhm3d/autoleadgen/discussions)
 
 ### Documentation Issues
 

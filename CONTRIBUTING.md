@@ -17,7 +17,7 @@ We are committed to providing a welcoming and inspiring community for all. Pleas
 
 ```bash
 # Fork on GitHub, then clone your fork
-git clone https://github.com/yourusername/autoleadgen.git
+git clone https://github.com/AmmarAhm3d/autoleadgen.git
 cd autoleadgen
 
 # Add upstream remote
