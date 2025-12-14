@@ -12,6 +12,11 @@ class Settings:
     firecrawl_api_key: str | None = None
     anthropic_api_key: str | None = None
     openai_api_key: str | None = None
+    groq_api_key: str | None = None
+
+    # LLM configuration
+    groq_model: str = "llama-3.1-8b-instant"
+    outreach_llm: str = "template"  # 'template' | 'groq'
 
     # defaults
     default_query: str = "nursing home"
@@ -67,6 +72,9 @@ def load_settings() -> Settings:
         firecrawl_api_key=os.getenv("FIRECRAWL_API_KEY"),
         anthropic_api_key=os.getenv("ANTHROPIC_API_KEY"),
         openai_api_key=os.getenv("OPENAI_API_KEY"),
+        groq_api_key=os.getenv("GROQ_API_KEY"),
+        groq_model=os.getenv("GROQ_MODEL", "llama-3.1-8b-instant"),
+        outreach_llm=os.getenv("OUTREACH_LLM", "template"),
         default_query=os.getenv("DEFAULT_QUERY", "nursing home"),
         default_location=os.getenv("DEFAULT_LOCATION", "Los Angeles, CA"),
         default_limit=_get_int("DEFAULT_LIMIT", 25),

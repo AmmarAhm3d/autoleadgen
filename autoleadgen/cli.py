@@ -18,6 +18,17 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--no-outreach", action="store_true", help="Skip outreach generation")
 
     p.add_argument("--no-langgraph", action="store_true", help="Disable LangGraph execution")
+    p.add_argument(
+        "--outreach-llm",
+        choices=["template", "groq"],
+        default=None,
+        help="Outreach generator to use (default: from OUTREACH_LLM env var, else template)",
+    )
+    p.add_argument(
+        "--groq-model",
+        default=None,
+        help="Groq model to use when --outreach-llm groq (or GROQ_MODEL env var)",
+    )
     p.add_argument("--crewai-smoke", action="store_true", help="Run CrewAI smoke test and exit")
     p.add_argument("--json", action="store_true", help="Print result summary as JSON")
     return p
@@ -30,6 +41,12 @@ def main(argv: list[str] | None = None) -> int:
     pipeline = LeadGenerationPipeline.from_env()
     if args.no_langgraph:
         pipeline.settings = replace(pipeline.settings, use_langgraph=False)
+
+    if args.outreach_llm is not None:
+        pipeline.settings = replace(pipeline.settings, outreach_llm=args.outreach_llm)
+
+    if args.groq_model is not None:
+        pipeline.settings = replace(pipeline.settings, groq_model=args.groq_model)
 
     if args.crewai_smoke:
         print(pipeline.crewai_smoke_test())

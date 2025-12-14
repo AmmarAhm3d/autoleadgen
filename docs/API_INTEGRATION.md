@@ -7,11 +7,12 @@ Complete guide to setting up and using all third-party APIs in AutoLeadGen.
 1. [Yelp Fusion API](#yelp-fusion-api)
 2. [Firecrawl API](#firecrawl-api)
 3. [Anthropic Claude API](#anthropic-claude-api)
-4. [OpenAI API](#openai-api-optional)
-5. [Environment Configuration](#environment-configuration)
-6. [Testing Connections](#testing-connections)
-7. [Rate Limiting & Quotas](#rate-limiting--quotas)
-8. [Error Handling](#error-handling)
+4. [OpenAI API (Optional)](#openai-api-optional)
+5. [Groq API (Optional)](#groq-api-optional)
+6. [Environment Configuration](#environment-configuration)
+7. [Testing Connections](#testing-connections)
+8. [Rate Limiting & Quotas](#rate-limiting--quotas)
+9. [Error Handling](#error-handling)
 
 ---
 
@@ -75,10 +76,7 @@ print(f"Address: {business['location']['display_address']}")
 ```
 
 #### Search with Filters
-```python
-# Advanced search
 results = searcher.search(
-    term="nursing home",
     location="Los Angeles",
     categories="healthserv",
     attributes="open_now",
@@ -390,6 +388,32 @@ print(f"Embedding dimension: {len(embedding)}")
 
 ---
 
+## 🥭 Groq API (Optional)
+
+### Overview
+AutoLeadGen can optionally use Groq to generate outreach emails via Groq's OpenAI-compatible chat completions endpoint.
+
+### Setup
+Add to `.env`:
+```env
+GROQ_API_KEY=your_groq_api_key_here
+GROQ_MODEL=llama-3.1-8b-instant
+OUTREACH_LLM=groq
+```
+
+### Usage
+Run the pipeline with Groq-powered outreach:
+```bash
+autoleadgen --outreach-llm groq
+```
+
+To keep deterministic template outreach:
+```bash
+autoleadgen --outreach-llm template
+```
+
+---
+
 ## ⚙️ Environment Configuration
 
 ### Complete .env Template
@@ -417,6 +441,12 @@ ANTHROPIC_API_KEY=your_anthropic_api_key_here
 # OpenAI - Embeddings and NLP (optional)
 # Get from: https://platform.openai.com
 OPENAI_API_KEY=your_openai_api_key_here
+
+# Groq - Outreach generation (optional)
+# Get from: https://console.groq.com
+GROQ_API_KEY=your_groq_api_key_here
+GROQ_MODEL=llama-3.1-8b-instant
+OUTREACH_LLM=template  # set to 'groq' to enable Groq outreach
 
 # DATABASE
 # ────────────────────────────────────────────────────────────────────────
